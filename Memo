@@ -1,0 +1,18 @@
+Questions
+*どうして_candidateId = Candidate {uint id}につながるのか ==> candidates[_candidateId]となっている。つまり、voteの引数はcandidatesの配列の中から候補者を探し出し、探し出した候補者の獲得表を+1する。
+でも、CandidateのUintはIDとVotecountがあるが、なぜIDとわかるのか？
+ 上のaddCandidateの引数が_nameなら、Voteの引数も_Idとすべきなのでは？
+
+* _ とは(_name) インスタンス変数？ Rubyの@のイメージ？ （そもそも、インスタンス変数とは？ 一時保存場所？）
+
+*_candidateId <= candidatesCount); _candidateIdはcandidatesCount より同じか小さくないといけないことだと思う。<=の意味チェック。
+
+contracts/Election.sol
+
+*40分前後のコンソールでの作業がわからない。Callback？ instance?? APP??(Callback?)
+
+*テスト
+    var voteCount = candidate[2]; なぜ2？
+    (candidateId) ==>_candidateIdじゃないの？
+
+    voteCount = candidate[2] ==>structのuint voteCountの事？
